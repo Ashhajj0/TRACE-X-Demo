@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0d131f;
+  --color-surface-dim: #0d131f;
+  --color-surface-bright: #333946;
+  --color-surface-container-lowest: #080e19;
+  --color-surface-container-low: #161c27;
+  --color-surface-container: #1a202b;
+  --color-surface-container-high: #242a36;
+  --color-surface-container-highest: #2f3541;
+  --color-surface-variant: #2f3541;
+  
+  --color-on-surface: #dde2f3;
+  --color-on-surface-variant: #bdc8d1;
+  --color-inverse-surface: #dde2f3;
+  --color-inverse-on-surface: #2a303d;
+  
+  --color-outline: #87929a;
+  --color-outline-variant: #3e484f;
+  
+  --color-primary: #8ed5ff;
+  --color-on-primary: #00354a;
+  --color-primary-container: #38bdf8;
+  --color-on-primary-container: #004965;
+  --color-primary-fixed-dim: #7bd0ff;
+  --color-primary-fixed: #c4e7ff;
+  --color-on-primary-fixed: #001e2c;
+
+  --color-secondary: #7bd1fa;
+  --color-on-secondary: #003547;
+  --color-secondary-container: #00799e;
+  --color-on-secondary-container: #e9f6ff;
+
+  --color-tertiary: #bdcee7;
+  --color-on-tertiary: #213145;
+  --color-tertiary-container: #a2b2cb;
+  --color-on-tertiary-container: #35455a;
+
+  --font-geist: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-jetbrains: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d131f;
+    color: #dde2f3;
+    font-family: var(--font-geist);
+  }
+}
+
+/* Custom utility classes matching design specs */
+.font-data-display {
+  font-family: var(--font-jetbrains);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.font-label-sm {
+  font-family: var(--font-jetbrains);
+  letter-spacing: 0.04em;
+}
+
+.font-label-md {
+  font-family: var(--font-jetbrains);
+  letter-spacing: 0.03em;
+}
+
+.font-label-lg {
+  font-family: var(--font-jetbrains);
+  letter-spacing: 0.02em;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080e19;
+}
+::-webkit-scrollbar-thumb {
+  background: #242a36;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e484f;
+}

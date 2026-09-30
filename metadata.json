@@ -1,0 +1,6 @@
+{
+  "name": "TRACE-X Planet X SPHEREx Astrometric Explorer",
+  "description": "Scientific astrometric motion tracking, blink comparator, and sky catalog analysis platform for outer solar system and Planet X candidate exploration using SPHEREx survey data.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
